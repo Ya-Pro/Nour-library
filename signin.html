@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the title of the site -->
+        <title>مكتبة نور</title>
+<!-- the base link of the images of any urls -->
+<base href="assets/">
+<!-- the icon of the site -->
+<link rel="shortcut icon" href="nooricon.png" type="image/x-icon" />
+<!-- font awesome 4 -->
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<!-- google link -->
+<link
+href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"
+/>
+<!-- css stylesheet link -->
+<link rel="stylesheet" href="src/signup.css" />
+    <!--  font awesome 5 -->
+    <script
+      src="https://kit.fontawesome.com/5a4c205343.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container align">
+      <div class="logo align">
+        <img src="logo.png" alt="logo" />
+        <h4>إنشاء حساب</h4>
+        <p>مكتبة غير محدودة من الكتب العربية</p>
+      </div>
+      <form class="form align">
+        <input
+          type="text"
+          name="اسم المستخدم"
+          id="username"
+          required
+          autocomplete="on"
+          placeholder="الإسـم"
+        />
+        <input
+          type="text"
+          name="كلمةالسر"
+          id="البريد الإلكتروني"
+          placeholder="البريد الإلكتروني "
+        />
+        <label for=""> اختر تاريخ ميلادك</label>
+        <input type="date" name="أدخل تاريخ ميلادك" id="" />
+        <select name="اختر نوعك" id="اختر نوعك">
+          <optgroup label="أختر نوعك"></optgroup>
+          <option value="ذكر">ذكر</option>
+          <option value="أنثى">أنثى</option>
+        </select>
+        <input
+          type="password"
+          required
+          autocomplete
+          placeholder="كلمة المرور "
+        />
+        <input type="submit" value="إنشاء حساب " class="create" />
+        <div>
+          بالتسجيل فإنك توافق على الشروط ، <a href="#">سياسة البيانات</a> و
+          <a href="#">سياسة ملفات تعريف الإرتباط الخاصة بنا</a>الخاصة بنا.
+        </div>
+        <p class="align">أو</p>
+        <p>لديك حساب ؟ <a>إنشاء حساب</a></p>
+        <p>نسيت كلمة المرور ؟ <a>إستعادة كلمة المرور</a></p>
+        <p class="align">أو</p>
+        <button type="button" class="align">
+          <a href="https://mail.google.com">دخول عبر جوجل</a>
+        </button>
+        <button type="button" class="align">
+          <a href="https://www.facebook.com/login/">دخول عبر الفيس بوك</a>
+        </button>
+      </form>
+    </div>
+    <ul class="list">
+      <li><a href="#">إتفاقية الإستخدام</a></li>
+      <li><a href="#">سياسية الخصوصية</a></li>
+      <li><a href="#">حقوق الملكية</a></li>
+      <li><a href="#">عن المكتبة</a></li>
+      <li><a href="#">إتصل بنا</a></li>
+    </ul>
+  </body>
+</html>

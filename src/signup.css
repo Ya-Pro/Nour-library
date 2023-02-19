@@ -1,0 +1,189 @@
+:root {
+  --mainColor: rgb(53, 174, 159);
+  --whiteColor: white;
+  --headerIconsColor: rgb(206, 206, 206);
+  --grayColor: rgb(71, 71, 71);
+  --borderColor: #eee;
+  --googleBG: rgb(219, 68, 55);
+  --facebookBG: rgb(66, 103, 178);
+}
+html {
+  font-size: 20px;
+}
+@font-face {
+  font-family: Jaw;
+  src: url(/assets/Jawadtaut-1.otf);
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Jaw;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+body {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--mainColor);
+}
+.align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  margin-top: 2rem;
+  width: 31rem;
+  height: 34.5rem;
+  border-radius: 1rem;
+  background-color: var(--whiteColor);
+}
+.container .logo {
+  width: 100%;
+  padding: 1rem;
+  /* padding-bottom: 2rem; */
+}
+.container .logo img {
+  width: 3.5rem;
+  height: 4rem;
+}
+.logo h4,
+p {
+  color: var(--mainColor);
+}
+.form {
+  width: 16rem;
+  height: 33rem;
+  overflow: hidden;
+}
+.form input {
+  width: 16rem;
+  height: 2.3rem;
+  border-radius: 0.2rem;
+  border: 0.02rem solid rgb(153, 153, 153);
+  margin-top: 0.8rem;
+  padding: 0.5rem 0.7rem;
+  position: relative;
+}
+.form input:nth-child(3) {
+  background-color: var(--mainColor);
+  border: none;
+  font-size: 1.1rem;
+  color: var(--whiteColor);
+  line-height: 0.8;
+}
+.form input:focus {
+  border: 0.02rem solid var(--mainColor);
+}
+.form input:focus::placeholder {
+  font-size: 0.6rem;
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.02rem solid var(--borderColor);
+  z-index: 200;
+  color: black;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  transition: all 0.3s;
+}
+.form input:nth-child(3):hover {
+  transition: all 0.2s linear;
+  cursor: pointer;
+  color: black;
+}
+.form input::placeholder {
+  color: rgb(153, 153, 153);
+  font-size: 1rem;
+}
+.form p {
+  color: var(--greyColor);
+  font-size: 80%;
+  word-spacing: 0.1rem;
+}
+.form p a {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.form p {
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  position: relative;
+  justify-content: center;
+}
+.form p:first-of-type::before,
+.form p:last-of-type::before {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  background-color: var(--grayColor);
+  left: 0.8rem;
+}
+.form p:first-of-type::after,
+.form p:last-of-type::after {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  background-color: var(--grayColor);
+  right: 0.8rem;
+}
+.form button {
+  width: 16rem;
+  height: 1.8rem;
+  color: var(--whiteColor);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  border-radius: 0.3rem;
+  line-height: 2;
+  cursor: pointer;
+}
+.form button:hover {
+  opacity: 0.9;
+  transition: all 0.1s;
+}
+.form button {
+  background-color: var(--googleBG);
+}
+.form button:last-of-type {
+  background-color: var(--facebookBG);
+}
+.form button a {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.form button a:visited {
+  color: var(--whiteColor);
+}
+.list {
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+.list li a {
+  color: var(--whiteColor);
+  font-size: 1.1rem;
+  border-bottom: 0.02rem solid transparent;
+}
+.list li:hover a {
+  transition: all 0.5s;
+  border-bottom: 0.02rem solid var(--whiteColor);
+}

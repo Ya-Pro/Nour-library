@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="ar-EG" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the title of the site -->
+        <title>مكتبة نور</title>
+            <!-- the base link -->
+    <base href="assets/">
+    <!-- the icon of the site -->
+    <link rel="shortcut icon" href="nooricon.png" type="image/x-icon" />
+        <!-- font awesome 4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- google link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+        <!-- css stylesheet -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!--  font awesome 5 -->
+    <script
+      src="https://kit.fontawesome.com/5a4c205343.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="top">
+      <img src="logo.png" alt="logo" />
+    </div>
+    <div class="header">
+      <nav>
+        <ul id="list">
+          <img src="nooricon.png" alt="nooricon" />
+          <li>
+            <a href="#"><i class="material-icons">home</i> الرئيسية</a>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">casino</i> أقسام الكتب</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="material-icons">account_circle</i> مؤلفو الكتب</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">apps</i>القائمة</a>
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">search</i>بحث</a>
+          </li>
+        </ul>
+      </nav>
+      <button id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="login">
+        <a href="signup.html">
+          <i class="material-icons">assignment_turned_in</i> دخـول</a
+        ><a href="signin.html"
+          ><i class="material-icons">create</i> إنشاء حساب</a
+        >
+      </div>
+    </div>
+    <!-- noor library -->
+    <div class="search">
+      <div class="head">
+        <h1>مكتبة نور</h1>
+        <h2>محرك بحث الكتب بالذكاء الاصطناعي</h2>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          name="search"
+          id="serach"
+          placeholder="ابحث عن كتاب أو مؤلف أو قسم كتب"
+        />
+        <i class="material-icons">search</i>
+
+        <div class="btn">بحث</div>
+      </div>
+      <div class="btns">
+        <button>الأشهر اليوم</button><button>أشهر الكتب</button
+        ><button>أحدث الكتب</button>
+      </div>
+    </div>
+    <!-- visitors and search operations -->
+    <div class="visitors">
+      <div class="topV">
+        <div>
+          <img src="online-education.png" alt="mobile app" />
+          <p>8,000,000 زائر شهرياً</p>
+          <p>
+            يزور موقع مكتبة نور اكثر من 8 مليون زائر مهتم بالكتب العربية شهرياً
+            حول العالم
+          </p>
+        </div>
+        <div>
+          <img src="home serach.png" alt="mobile app" />
+          <p>100,000 عملية بحث يوميا</p>
+          <p>
+            أكثر من 100 ألف عملية بحث عن كتاب عربي تحدث يومياً على مكتبة
+            نور8,000,000 زائر شهرياً
+          </p>
+        </div>
+        <div>
+          <img src="digital library.png" alt="mobile app" />
+          <p>871,738 كتاب</p>
+          <p>
+            آلاف الكتب المنشورة على مكتبة نور منها ما نشره المؤلف بنفسه أو فريق
+            المكتبة
+          </p>
+        </div>
+
+        <div>
+          <img src="mobile app.png" alt="mobile app" />
+          <p>285,720 مؤلف</p>
+          <p>
+            تهدف مكتبة نور إلى إنشاء أكبر قاعدة بيانات لمؤلفين الكتب العربية عبر
+            التاريخ
+          </p>
+        </div>
+      </div>
+      <div class="btns">
+        <button>
+          إبدأ إشهار الكتب <br />
+          - الإشهار المدفوع -</button
+        ><button>نشر كتاب <br />- النشر المجاني -</button>
+      </div>
+      <div class="bottom">
+        <p>
+          قريباً تمكين المؤلفين ودور النشر والمكتبات من بيع الكتب الإلكترونية
+          والورقية من خلال منصة مكتبة نور
+        </p>
+      </div>
+    </div>
+    <div class="scroll">
+      <aside class="asiderigth">
+        <div class="books">
+          <div class="book">
+            <img src="trend books.png" alt="trend book" />
+            <p>الأشهر اليوم</p>
+          </div>
+          <div class="book">
+            <img src="new books.png " alt="trend book" />
+            <p>أشهر الكتب</p>
+          </div>
+          <div class="book">
+            <img src="new books.png" alt="trend book" />
+            <p>أحدث الكتب</p>
+          </div>
+        </div>
+        <div class="bookname">
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="القرآن الكريم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الداء والدواء.jpg" alt="" />
+            <p>الداء والدواء</p>
+            <p>شريف طارق عطاالله</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="الرحيق المختوم.jpg" alt="" />
+            <p>الرحيق المختوم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="السيرة النبوية.jpg" alt="" />
+            <p>السيرة النبوية</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src=" القرآن العظيم.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="المدبر.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+          <div class="inside">
+            <div class="stars">
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star_half</i>
+            </div>
+            <img src="رياض الصالحين.jpg" alt="" />
+            <p>القرآن الكريم</p>
+            <p>هو كلام الله عز وجل</p>
+          </div>
+        </div>
+      </aside>
+      <aside class="authors">
+        <div class="firstpart">
+          <div class="serachbar">
+            <h1>أقسام الكتب</h1>
+            <i class="material-icons">search</i>
+          </div>
+          <div class="category">
+            <h2>الروايات والقصص الأدبية</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التنمية البشرية وتطوير الذات</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الديانة الإسلاميةذ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التاريخ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الفقه الإسلامي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الأدب</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الروايات والقصص الأدبية</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التنمية البشرية وتطوير الذات</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الديانة الإسلاميةذ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التاريخ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الفقه الإسلامي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الأدب</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الروايات والقصص الأدبية</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التنمية البشرية وتطوير الذات</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الديانة الإسلاميةذ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>التاريخ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الفقه الإسلامي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>الأدب</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <button>المزيد من مؤلفي الكتب</button>
+        </div>
+        <div class="secondpart">
+          <div class="serachbar">
+            <h1>مؤلفو الكتب</h1>
+            <i class="material-icons">search</i>
+          </div>
+          <div class="category">
+            <h2>مصطفي محمود</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>إبراهيم الفقي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>أحمد خالد توفيق</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>فهد عامر الأحمدي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>هو كلام الله عز وجل</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>محمد متولي الشعراوي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category"></div>
+          <div class="category">
+            <h2>سيد قطب</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>محمد الغزالي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>اسلام جمال</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>اجاثا كريستي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>عباس العقاد</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>نجيب محفوظ</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>عمر الحوراني</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>أثير عبدالله النشمي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>جهاد الترباني</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>أحمد خالد مصطفي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <div class="category">
+            <h2>أدهم شرقاوي</h2>
+            <i class="material-icons">book</i>
+          </div>
+          <button>المزيد من مؤلفي الكتب</button>
+        </div>
+      </aside>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

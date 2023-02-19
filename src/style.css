@@ -1,0 +1,1016 @@
+:root {
+  --mainColor: rgb(53, 174, 159);
+  --whiteColor: white;
+  --headerIconsColor: rgb(206, 206, 206);
+  --grayColor: rgb(71, 71, 71);
+  --borderColor: #eee;
+}
+html {
+  font-size: 16px;
+}
+@font-face {
+  font-family: Jaw;
+  src: url(/assets/Jawadtaut-1.otf);
+}
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Jaw;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  width: 100%;
+  height: 1000vh;
+}
+.top {
+  height: 12rem;
+  background-color: var(--whiteColor);
+  border-top: 0.2rem solid var(--mainColor);
+  display: flex;
+  align-items: center;
+}
+.top img {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 6rem;
+}
+.header {
+  width: 100%;
+  height: 4rem;
+  background-color: var(--whiteColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.12rem solid var(--headerIconsColor);
+  padding: 0 2rem;
+  z-index: 5;
+}
+.header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  display: inline-block;
+  background-color: var(--whiteColor);
+}
+li:hover a {
+  color: var(--mainColor);
+  transition: all 0.3s linear;
+}
+ul li a {
+  color: var(--headerIconsColor);
+  font-size: 1.4rem;
+  margin-left: 1.7rem;
+  color: rgb(79, 79, 79);
+}
+ul li a i {
+  position: relative;
+  top: 0.3rem;
+  left: 0.1rem;
+}
+.header img {
+  margin-right: 7rem;
+  width: 3rem;
+  height: 100%;
+  border-right: 0.12rem solid rgb(198, 198, 198);
+}
+.login {
+  position: relative;
+  margin-left: 3rem;
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .login a:nth-child(1),
+.login a:last-child {
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--mainColor);
+  padding: 0.1rem 0.8rem;
+  font-size: 1.2rem;
+  width: 6rem;
+  height: 2.8rem;
+  margin-left: 0.5rem;
+  color: var(--mainColor);
+}
+.login a:last-child {
+  width: 8rem;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  opacity: 0.7;
+}
+.login a:last-child:hover {
+  opacity: 1;
+}
+.login a i {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header .login a:nth-child(1):hover {
+  background-color: var(--mainColor);
+  cursor: pointer;
+  transform: 0.5s;
+  border: 0.1rem solid var(--whiteColor);
+  color: var(--whiteColor);
+}
+.search {
+  height: 30rem;
+  width: 100%;
+  background-color: var(--mainColor);
+  display: grid;
+  align-content: space-evenly;
+  justify-items: center;
+}
+.search .head {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.search h1 {
+  font-size: 2.5rem;
+  color: var(--whiteColor);
+}
+.search h2 {
+  color: var(--whiteColor);
+  font-size: 2rem;
+}
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 43.75rem;
+  height: 4rem;
+  border-radius: 3rem;
+  background-color: var(--whiteColor);
+}
+.input i {
+  position: absolute;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.input input {
+  position: absolute;
+  width: 92%;
+  height: 95%;
+  top: 0;
+  left: 0;
+  outline: none;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.5rem;
+}
+.input input::placeholder {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.input .btn {
+  border-radius: 3rem;
+  left: 0.1rem;
+  position: absolute;
+  background-color: var(--mainColor);
+  padding: 1rem 2.5rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.input .btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3;
+}
+.btns {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+.btns button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  border: 0.1rem solid var(--whiteColor);
+  font-size: 1.3rem;
+  margin: 0 0.9rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.btns button:hover {
+  filter: brightness(90%);
+  transition: 0.5s;
+}
+.visitors {
+  width: 100%;
+  height: 35rem;
+  background-image: linear-gradient(
+    to left,
+    rgb(234, 255, 253),
+    rgb(176, 255, 243),
+    rgb(221, 255, 255),
+    rgb(176, 255, 255)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.visitors .topV {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.visitors .topV div {
+  display: grid;
+  justify-items: center;
+  align-content: space-evenly;
+  padding: 2rem;
+}
+.visitors .topV div p {
+  font-size: 1.1;
+}
+.visitors .topV div img {
+  width: 7rem;
+  height: 7rem;
+}
+.visitors .btns button {
+  background-color: var(--whiteColor);
+  color: var(--mainColor);
+  height: 5rem;
+  width: 13rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+}
+.visitors .bottom {
+  margin-bottom: 4rem;
+}
+.visitors p {
+  color: var(--mainColor);
+  font-size: 1.3rem;
+}
+
+/* ________________________________________________________________________________________________________
+____________________________________________Scroll bar______________________________________________________
+*/
+.scroll {
+  height: 1300vh;
+  background-color: #eee;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+}
+.scroll .asideright {
+  width: 50rem;
+  grid-area: right;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+  margin-left: 10rem;
+}
+.books {
+  width: 50rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(199, 199, 199);
+  margin: 0 5rem 0 2rem;
+  cursor: pointer;
+}
+.books .book {
+  position: relative;
+  height: 8rem;
+  width: calc(100% / 3);
+  display: grid;
+  justify-items: center;
+}
+.book:nth-child(1) {
+  border-bottom: 0.15rem solid var(--mainColor);
+}
+.book img {
+  margin-top: 1rem;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+}
+.book p {
+  top: 5rem;
+  font-size: 1.4rem;
+  position: absolute;
+  color: var(--grayColor);
+}
+.book p:nth-child(1) {
+  color: var(--mainColor);
+}
+.book:nth-child(2)::before,
+.book:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--mainColor);
+}
+.book:nth-child(2):hover::before,
+.book:nth-child(3):hover::before {
+  width: 100%;
+  transition: 0.7s;
+}
+.bookname {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 56rem;
+  margin-right: 2rem;
+}
+.bookname .inside {
+  background-color: var(--whiteColor);
+  border-radius: 1rem;
+  width: 11rem;
+  height: 20rem;
+  margin: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.bookname .inside:hover {
+  border: 0.1rem solid var(--mainColor);
+  transition: 0.8s;
+  transform: translateY(-0.4rem);
+}
+.bookname .inside .stars {
+  display: flex;
+  justify-content: center;
+}
+.bookname .inside .stars i {
+  color: orange;
+  font-size: 1.4rem;
+  direction: rtl;
+}
+.bookname .inside img {
+  width: 8rem;
+  border: 0.2rem solid var(--whiteColor);
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--borderColor),
+    -0.1rem -0.1rem 0.1rem 0.1rem var(--borderColor);
+  height: 10rem;
+}
+.bookname .inside p {
+  font-size: 1.1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.bookname .inside p::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: var(--mainColor);
+}
+.bookname .inside p:hover::before {
+  width: 100%;
+  transition: 0.4s;
+}
+.bookname .inside p:nth-child(2) {
+  color: var(--mainColor);
+}
+.scroll .authors {
+  background-color: #eee;
+  width: 16rem;
+  height: 310vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+.scroll .authors .firstpart,
+.secondpart {
+  height: 150vh;
+  background-color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+.scroll .author .secondpart {
+  position: sticky;
+  bottom: 1rem;
+}
+.authors h1 {
+  width: 10rem;
+  padding: 0.5rem 0.8rem;
+  color: var(--grayColor);
+  position: relative;
+}
+.authors h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.serachbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.authors h1::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0.08rem;
+  right: 0.8rem;
+  bottom: 0;
+  background-color: var(--mainColor);
+}
+.searchbar i {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--mainColor);
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+.category h2 {
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+.category h2::before {
+  position: absolute;
+  content: "";
+  right: 0.8rem;
+  bottom: 0;
+  background-color: var(--mainColor);
+  width: 0;
+  height: 0.1rem;
+}
+.category h2:hover::before {
+  width: 80%;
+  transition: 0.5s;
+}
+.category i {
+  color: var(--mainColor);
+}
+.authors button {
+  position: relative;
+  right: 10%;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  background-color: var(--whiteColor);
+  border-radius: 3rem;
+  border: 0.15rem solid var(--mainColor);
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.authors button:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
+#menu {
+  position: relative;
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: none;
+  cursor: pointer;
+  user-select: none;
+  display: none;
+}
+#menu span {
+  display: block;
+  background-color: var(--mainColor);
+  width: 3rem;
+  height: 0.5rem;
+  margin-bottom: 0.5rem;
+  transform-origin: 0 0;
+  transition: 0.4s;
+  border-radius: 0.6rem;
+  z-index: 1000;
+}
+/* media query is rely important */
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 8px;
+  }
+  .top {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    direction: ltr;
+    padding: 0;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11rem;
+  }
+  .header nav ul {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 30%;
+    left: 3rem;
+    z-index: 1000;
+  }
+  .header ul li {
+    display: block;
+    margin-top: 1rem;
+    background-color: transparent;
+  }
+  .header ul.is-active {
+    display: block;
+  }
+  .header ul img {
+    display: none;
+  }
+  .header ul li {
+    direction: rtl;
+    width: 20rem;
+  }
+  .header ul li a {
+    color: var(-mainColor);
+    font-size: 1rem;
+  }
+  .header ul li a i {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .header .login a {
+    width: 10rem;
+    padding-left: 2rem;
+  }
+  .header .login a i {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .visitors {
+    height: 80rem;
+    padding: 5rem 1rem;
+  }
+  .visitors .topV {
+    display: grid;
+  }
+  .visitors p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .visitors .topV div p {
+    font-size: 150%;
+  }
+  .category h2 {
+    font-size: 3rem;
+  }
+  .authors h1 {
+    width: 30rem;
+    font-size: 3rem;
+  }
+  .category i {
+    font-size: 5rem;
+  }
+  .authors button {
+    font-size: 3rem;
+  }
+  .scroll {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+  }
+  .books {
+    margin-left: 4rem;
+    width: 35rem;
+    display: grid;
+    justify-items: center;
+  }
+  .books {
+    border: none;
+    display: flex;
+  }
+
+  .bookname {
+    width: 95%;
+  }
+  .bookname .inside {
+    width: 45%;
+  }
+  .bookname .inside p {
+    font-size: 1.5rem;
+  }
+  .scroll .authors {
+    width: 100%;
+  }
+  #menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+  .top {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .header {
+    direction: ltr;
+    padding: 0;
+    width: 100%;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11rem;
+  }
+  .header nav ul {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 30%;
+    left: 3rem;
+    z-index: 1000;
+  }
+  .header ul li {
+    display: block;
+    margin-top: 1rem;
+    background-color: transparent;
+  }
+  .header ul.is-active {
+    display: block;
+  }
+  .header ul img {
+    display: none;
+  }
+  .header ul li {
+    direction: rtl;
+    width: 20rem;
+  }
+  .header ul li a {
+    color: var(-mainColor);
+    font-size: 1rem;
+  }
+  .header ul li a i {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .header .login a {
+    width: 10rem;
+    padding-left: 2rem;
+  }
+  .header .login a i {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .visitors {
+    height: 80rem;
+    padding: 5rem 1rem;
+  }
+  .visitors .topV {
+    display: grid;
+  }
+  .visitors p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .visitors .topV div p {
+    font-size: 150%;
+  }
+  .category h2 {
+    font-size: 3rem;
+  }
+  .authors h1 {
+    width: 30rem;
+    font-size: 3rem;
+  }
+  .category i {
+    font-size: 5rem;
+  }
+  .authors button {
+    font-size: 3rem;
+  }
+  .scroll {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+  }
+  .books {
+    width: 35rem;
+    display: grid;
+    justify-items: center;
+  }
+  .books {
+    border: none;
+    display: flex;
+  }
+
+  .bookname {
+    width: 95%;
+  }
+  .bookname .inside {
+    width: 45%;
+  }
+  .bookname .inside p {
+    font-size: 1.5rem;
+  }
+  .scroll .authors {
+    width: 100%;
+  }
+  #menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 20px;
+  }
+  .top {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    direction: ltr;
+    padding: 0;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11rem;
+  }
+  .header nav ul {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 30%;
+    left: 3rem;
+    z-index: 1000;
+  }
+  .header ul li {
+    display: block;
+    margin-top: 1rem;
+    background-color: transparent;
+  }
+  .header ul.is-active {
+    display: block;
+  }
+  .header ul img {
+    display: none;
+  }
+  .header ul li {
+    direction: rtl;
+    width: 20rem;
+  }
+  .header ul li a {
+    color: var(-mainColor);
+    font-size: 1rem;
+  }
+  .header ul li a i {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .header .login a {
+    width: 10rem;
+    padding-left: 2rem;
+  }
+  .header .login a i {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .visitors {
+    height: 80rem;
+    padding: 5rem 1rem;
+  }
+  .visitors .topV {
+    display: grid;
+  }
+  .visitors p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .visitors .topV div p {
+    font-size: 150%;
+  }
+  .category h2 {
+    font-size: 3rem;
+  }
+  .authors h1 {
+    width: 30rem;
+    font-size: 3rem;
+  }
+  .category i {
+    font-size: 5rem;
+  }
+  .authors button {
+    font-size: 3rem;
+  }
+  .scroll {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+  }
+  .books {
+    margin-left: 4rem;
+    width: 35rem;
+    display: grid;
+    justify-items: center;
+  }
+  .books {
+    border: none;
+    display: flex;
+  }
+
+  .bookname {
+    width: 95%;
+  }
+  .bookname .inside {
+    width: 45%;
+  }
+  .bookname .inside p {
+    font-size: 1.5rem;
+  }
+  .scroll .authors {
+    width: 100%;
+  }
+  .scroll {
+    display: grid;
+  }
+  #menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  html {
+    font-size: 22px;
+  }
+  .top {
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    direction: ltr;
+    padding: 0;
+  }
+  .header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 11rem;
+  }
+  .header nav ul {
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 30%;
+    left: 3rem;
+    z-index: 1000;
+  }
+  .header ul li {
+    display: block;
+    margin-top: 1rem;
+    background-color: transparent;
+  }
+  .header ul.is-active {
+    display: block;
+  }
+  .header ul img {
+    display: none;
+  }
+  .header ul li {
+    direction: rtl;
+    width: 20rem;
+  }
+  .header ul li a {
+    color: var(-mainColor);
+    font-size: 1rem;
+  }
+  .header ul li a i {
+    position: relative;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .header .login a {
+    width: 10rem;
+    padding-left: 2rem;
+  }
+  .header .login a i {
+    font-size: 1rem;
+    line-height: 2;
+  }
+  .visitors {
+    height: 80rem;
+    padding: 5rem 1rem;
+  }
+  .visitors .topV {
+    display: grid;
+  }
+  .visitors p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .visitors .topV div p {
+    font-size: 150%;
+  }
+  .category h2 {
+    font-size: 3rem;
+  }
+  .authors h1 {
+    width: 30rem;
+    font-size: 3rem;
+  }
+  .category i {
+    font-size: 5rem;
+  }
+  .authors button {
+    font-size: 3rem;
+  }
+  .scroll {
+    display: grid;
+    justify-items: center;
+    padding: 0;
+  }
+  .books {
+    margin-left: 4rem;
+    width: 35rem;
+    display: grid;
+    justify-items: center;
+  }
+  .books {
+    border: none;
+    display: flex;
+  }
+
+  .bookname {
+    width: 95%;
+  }
+  .bookname .inside {
+    width: 45%;
+  }
+  .bookname .inside p {
+    font-size: 1.5rem;
+  }
+  .scroll .authors {
+    width: 100%;
+  }
+  .scroll {
+    display: grid;
+  }
+  #menu {
+    display: block;
+  }
+}
+/* the scrollbar */
+::-webkit-scrollbar{
+  width: .7rem;
+}
+::-webkit-scrollbar-track{
+  background-color: #b9b9b9;
+}
+::-webkit-scrollbar-thumb{
+  height: 9rem;
+  background: linear-gradient(rgb(208, 0, 255),purple,rgb(255, 71, 182),rgb(255, 0, 81));
+  border-radius: 1rem;
+}
